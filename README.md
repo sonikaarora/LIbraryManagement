@@ -7,6 +7,8 @@ Library management system is developed for Managing books at University and to a
 ○	  Circulation – All the transactions of books like checkout, return, renew go here.
 ○	  Waiting List – Users are added to the waiting list if the book is not available. This module manages waiting list for each book and book holding functionality.
 
+![screen shot 2017-01-12 at 11 14 09 pm](https://cloud.githubusercontent.com/assets/6670972/21921415/da9aa782-d91c-11e6-934f-c6aa9ee82e54.png)
+
 # Technology Choices:
   
 Front End:  Angular JS.

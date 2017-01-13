@@ -1,0 +1,46 @@
+<div class="login" ng-controller="userProfileController">
+
+	<div class="container">
+
+		<div class="panel panel-default">
+			<div class="panel-body" style="padding: 30px; background: #ffffff">
+				<div class="row" style="margin-top: 15px">
+
+					<!-- 	<table class="table table-default" ng-show="searchResults.length > 0"> -->
+					<table class="table table-stripped">
+						<tr>
+							<th></th>
+							<th>Author</th>
+							<th>Title</th>
+							<th>Checkout Date</th>
+							<th>Due Date</th>
+							<th>Fine($)</th>
+							<th></th>
+						</tr>
+
+						<tr ng-repeat="book in books">
+							<td><input type="checkbox" ng-model="book.selection">
+							</td>
+							<td>{{book.author}}</td>
+							<td>{{book.title}}</td>
+							<td>{{book.checkoutDate | date}}</td>
+							<td>{{book.dueDate | date}}</td>
+							<td>{{book.fine}}</td>
+						</tr>
+						<div>
+							<button class="btn btn-primary btn-block"
+								ng-click="renewSelectedBooks(books)">Renew</button>
+							<button class="btn btn-primary btn-block"
+								ng-click="returnSelectedBooks(books)">Return</button>
+							</td>	
+						</tr>
+					</table>
+ <!-- <div class="alert alert-success" id="successReturndiv" style="display: none"></div> -->
+				</div>
+				 <br><br><br>
+  
+			</div>
+		</div>
+		
+	</div>
+</div>
